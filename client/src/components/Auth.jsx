@@ -20,37 +20,41 @@ const Auth = () => {
   const [isSignup, setIsSignup] = useState(true);
 
   const handleChange = (e) => {
-      setForm({ ...form, [e.target.name]: e.target.value });
+    setForm({ ...form, [e.target.name]: e.target.value });
   }
 
   const handleSubmit = async (e) => {
+    try {
       e.preventDefault();
 
       const { username, password, phoneNumber, avatarURL } = form;
-
-      const URL = 'https://localhost:5000/auth';
+      console.log(form);
+      const URL = 'http://localhost:5000/auth';
       // const URL = 'https://medical-pager.herokuapp.com/auth';
-
+  
       const { data: { token, userId, hashedPassword, fullName } } = await axios.post(`${URL}/${isSignup ? 'signup' : 'login'}`, {
         username, password, fullName: form.fullName, phoneNumber, avatarURL,
       });
-
+  
       cookies.set('token', token);
       cookies.set('username', username);
       cookies.set('fullName', fullName);
       cookies.set('userId', userId);
-
+  
       if(isSignup) {
-          cookies.set('phoneNumber', phoneNumber);
-          cookies.set('avatarURL', avatarURL);
-          cookies.set('hashedPassword', hashedPassword);
+        cookies.set('phoneNumber', phoneNumber);
+        cookies.set('avatarURL', avatarURL);
+        cookies.set('hashedPassword', hashedPassword);
       }
-
+  
       window.location.reload();
+    } catch (error) {
+      console.log(error);
+    }
   }
 
   const switchMode = () => {
-      setIsSignup((prevIsSignup) => !prevIsSignup);
+    setIsSignup((prevIsSignup) => !prevIsSignup);
   }
 
   return (
@@ -151,4 +155,4 @@ const Auth = () => {
   )
 }
 
-export default Auth
+export default Auth;
