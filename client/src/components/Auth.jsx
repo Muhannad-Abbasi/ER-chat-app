@@ -65,8 +65,7 @@ const Auth = () => {
           <form onSubmit={handleSubmit}>
             {isSignup && (
               <div className="auth__form-container_fields-content_input">
-                <label htmlFor="fullName">Full Name</label>
-                <input 
+                <input
                   name="fullName" 
                   type="text"
                   placeholder="Full Name"
@@ -76,7 +75,6 @@ const Auth = () => {
               </div>
             )}
             <div className="auth__form-container_fields-content_input">
-              <label htmlFor="username">Username</label>
                 <input 
                   name="username" 
                   type="text"
@@ -87,7 +85,6 @@ const Auth = () => {
             </div>
             {isSignup && (
               <div className="auth__form-container_fields-content_input">
-                <label htmlFor="phoneNumber">Phone Number</label>
                 <input 
                   name="phoneNumber" 
                   type="text"
@@ -99,7 +96,6 @@ const Auth = () => {
             )}
             {isSignup && (
               <div className="auth__form-container_fields-content_input">
-                <label htmlFor="avatarURL">Avatar URL</label>
                 <input 
                   name="avatarURL" 
                   type="text"
@@ -110,7 +106,6 @@ const Auth = () => {
               </div>
             )}
             <div className="auth__form-container_fields-content_input">
-              <label htmlFor="password">Password</label>
               <input 
                 name="password" 
                 type="password"
@@ -121,7 +116,6 @@ const Auth = () => {
             </div>
             {isSignup && (
               <div className="auth__form-container_fields-content_input">
-                <label htmlFor="confirmPassword">Confirm Password</label>
                 <input 
                   name="confirmPassword" 
                   type="password"

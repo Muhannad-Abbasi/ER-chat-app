@@ -45,12 +45,11 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-
   padding: 2rem;
   box-shadow: 0px 1px 5px rgb(0 0 0 / 10%);
   border-radius: 5px;
   transition: 0.8s ease;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.5);
 }
 
 .auth__form-container_fields-content p {
@@ -58,13 +57,13 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   color: #05245a;
   font-weight: 900;
+  text-align: center;
 }
 
 .auth__form-container_fields-content_input {
   display: flex;
   flex-direction: column;
   position: relative;
-
   margin: 1rem 0rem;
 }
 
@@ -80,12 +79,17 @@ body {
 .auth__form-container_fields-content_input input {
   padding: 0.55rem 0.4rem;
   border: 1px solid rgb(184, 196, 194);
-  border-radius: 4px;
+  border-radius: 20px;
   font-size: 14px;
   outline: none;
   transition: all 150ms ease-in-out 0s;
   width: 85%;
+  margin: auto;
   background: #fff;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
 }
 
 .auth__form-container_fields-content_input input::placeholder {
@@ -126,6 +130,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 500;
   padding: 0.7rem 1.2rem;
+  margin: auto;
   outline: none;
   cursor: pointer;
   transition: 0.3s ease;
@@ -137,9 +142,8 @@ body {
 
 .auth__form-container_fields-account {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-
   margin-top: 0.2rem;
 }
 
