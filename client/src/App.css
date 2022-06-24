@@ -27,7 +27,7 @@ body {
   justify-content: center;
 
   padding: 2rem;
-  background: #005fff;
+  background: #83D1F7;
 }
 
 .auth__form-container_image {
@@ -79,17 +79,17 @@ body {
 .auth__form-container_fields-content_input input {
   padding: 0.55rem 0.4rem;
   border: 1px solid rgb(184, 196, 194);
-  border-radius: 20px;
+  border-radius: 10px;
   font-size: 14px;
   outline: none;
   transition: all 150ms ease-in-out 0s;
   width: 85%;
   margin: auto;
   background: #fff;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 
 .auth__form-container_fields-content_input input::placeholder {
