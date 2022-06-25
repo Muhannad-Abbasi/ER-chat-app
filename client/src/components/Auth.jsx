@@ -60,6 +60,9 @@ const Auth = () => {
   return (
     <div className="auth__form-container">
       <div className="auth__form-container_fields">
+        <div className='auth__form-container-title'>
+          <p className="auth__form-container_title">that <span className='auth__span-title'>sky</span> chat</p>
+        </div>
         <div className="auth__form-container_fields-content">
           <p>{isSignup ? 'Sign Up' : 'Sign In'}</p>
           <form onSubmit={handleSubmit}>
