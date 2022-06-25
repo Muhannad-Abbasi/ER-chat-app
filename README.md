@@ -1,4 +1,4 @@
-# ER-chat-app
+# That Sky Chat
 
 ## Frontend Installed Packages
 1- stream-chat
