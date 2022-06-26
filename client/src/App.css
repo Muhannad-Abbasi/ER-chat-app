@@ -1,5 +1,6 @@
 :root {
-  --primary-color: #83D1F7;
+  --primary-color: #549ABC;
+  --primary-color-list: linear-gradient(45deg, #83D1F7, #317191);
   --primary-color-alpha: #005fff1a;
 }
 
@@ -63,6 +64,13 @@ body {
   color: #ABABAB;
   font-weight: bold;
   font-size: 2.5rem;
+}
+
+.auth__form-container--made-by {
+  font-family: 'Overpass', sans-serif;
+  color: #ABABAB;
+  font-weight: bold;
+  text-align: center;
 }
 
 .auth__span-title {
@@ -206,8 +214,31 @@ body {
 }
 
 @media screen and (max-width: 375px) {
+  .auth__form-container-title {
+    margin: 0 auto;
+  }
+
+  .auth__form-container_title {
+    font-size: 1.8rem;
+    margin: 0 auto 0 auto;
+  }
+
+  .auth__form-container--made-by {
+    margin: .5rem;
+  }
+  .auth__form-container_fields-content p {
+    margin: 0;
+  }
+
+  .auth__form-container_fields-content {
+    padding: 1rem 1.2rem;
+  }
+
+  .auth__form-container_fields-content_button {
+    margin: 1rem;
+  }
   .auth__form-container_fields {
-    padding: 2rem 0.5rem;
+    padding: 1rem 0.5rem;
   }
 
   .auth__form-container_fields-content_input input {
@@ -404,7 +435,7 @@ body {
 .channel-list__sidebar {
   width: 72px;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    var(--primary-color);
+    var(--primary-color-list);
   box-shadow: 1px 0px 0px rgba(0, 0, 0, 0.25);
   /* border-top-left-radius: 16px; */
   /* border-bottom-left-radius: 16px; */
@@ -429,7 +460,7 @@ body {
 .channel-list__list__wrapper {
   display: flex;
   flex-direction: column;
-  background: var(--primary-color);
+  background: var(--primary-color-list);
   width: 240px;
 }
 
@@ -699,12 +730,14 @@ body {
 }
 
 .user-list__container {
+  background-color: rgba(245, 245, 245, 0.349);
   display: flex;
   flex-direction: column;
   height: 100%;
 }
 
 .user-list__header {
+  background-color: rgba(245, 245, 245, 0.349);
   display: flex;
   align-items: center;
   margin: 0px 20px;
@@ -817,6 +850,7 @@ body {
 }
 
 .channel-name-input__wrapper {
+  background-color: rgba(245, 245, 245, 0.349);
   display: flex;
   flex-direction: column;
   height: 169px;
@@ -865,7 +899,7 @@ body {
 }
 
 .edit-channel__button-wrapper p {
-  background: var(--primary-color);
+  background: var(--primary-color-list);
   font-family: Helvetica Neue, sans-serif;
   font-weight: bold;
   font-size: 18px;
@@ -1016,14 +1050,14 @@ body {
   height: auto;
   display: flex;
   align-items: center;
-  background: rgba(119, 119, 119, 0.2);
+  background: rgba(255, 255, 255, 0.178);
   font-weight: bold;
   cursor: pointer;
   z-index: 2;
 }
 
 .channel-preview__wrapper:hover {
-  background: rgba(119, 119, 119, 0.2);
+  background: rgba(255, 255, 255, 0.178);
   font-weight: bold;
   cursor: pointer;
 }

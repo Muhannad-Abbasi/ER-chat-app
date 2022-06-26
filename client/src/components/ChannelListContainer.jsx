@@ -24,7 +24,7 @@ const SideBar = ({ logout }) => (
 
 const CompanyHeader = () => (
   <div className="channel-list__header">
-    <p className="channel-list__header__text">that sky chat</p>
+    <p className="channel-list__header__text">that <span className='auth__span-title'>sky</span> chat</p>
   </div>
 )
 
@@ -40,15 +40,15 @@ const ChannelListContent = ({ isCreating, setIsCreating, setCreateType, setIsEdi
   const { client } = useChatContext();
 
   const logout = () => {
-      cookies.remove("token");
-      cookies.remove('userId');
-      cookies.remove('username');
-      cookies.remove('fullName');
-      cookies.remove('avatarURL');
-      cookies.remove('hashedPassword');
-      cookies.remove('phoneNumber');
+    cookies.remove("token");
+    cookies.remove('userId');
+    cookies.remove('username');
+    cookies.remove('fullName');
+    cookies.remove('avatarURL');
+    cookies.remove('hashedPassword');
+    cookies.remove('phoneNumber');
 
-      window.location.reload();
+    window.location.reload();
   }
 
   const filters = { members: { $in: [client.userID] } };
