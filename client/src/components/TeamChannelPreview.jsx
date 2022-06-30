@@ -48,4 +48,4 @@ const TeamChannelPreview = ({ setActiveChannel, setIsCreating, setIsEditing, set
   );
 }
 
-export default TeamChannelPreview
+export default TeamChannelPreview;

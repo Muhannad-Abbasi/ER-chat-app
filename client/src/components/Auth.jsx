@@ -30,7 +30,6 @@ const Auth = () => {
       const { username, password, phoneNumber, avatarURL } = form;
       console.log(form);
       const URL = 'http://localhost:5000/auth';
-      // const URL = 'https://medical-pager.herokuapp.com/auth';
   
       const { data: { token, userId, hashedPassword, fullName } } = await axios.post(`${URL}/${isSignup ? 'signup' : 'login'}`, {
         username, password, fullName: form.fullName, phoneNumber, avatarURL,
@@ -62,7 +61,7 @@ const Auth = () => {
       <div className="auth__form-container_fields">
         <div className='auth__form-container-title'>
           <p className="auth__form-container_title">that <span className='auth__span-title'>sky</span> chat</p>
-          <p className='auth__form-container--made-by'>Made by <span className='auth__span-title'>Muhannad</span></p>
+          <p className='auth__form-container--made-by'>Made by <span className='auth__span-title'>Muhannad</span> ☕</p>
         </div>
         <div className="auth__form-container_fields-content">
           <p>{isSignup ? 'Sign Up' : 'Sign In'}</p>

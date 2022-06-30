@@ -44,4 +44,4 @@ const TeamChannelList = ({ setToggleContainer, children, error = false, loading,
   )
 }
 
-export default TeamChannelList
+export default TeamChannelList;
