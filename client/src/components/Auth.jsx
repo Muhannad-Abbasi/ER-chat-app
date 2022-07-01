@@ -104,7 +104,7 @@ const Auth = () => {
                   type="text"
                   placeholder="Avatar URL"
                   onChange={handleChange}
-                  required
+                  // required
                 />
               </div>
             )}
