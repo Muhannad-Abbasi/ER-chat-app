@@ -28,4 +28,5 @@
 
 ## Observation
 The app is no longer could be worked due to the expiration of the free trial that Stream.io provided, but you can check my post on LinkedIn where I recorded a video on how the app should works.
+
 Here's the post link: https://www.linkedin.com/feed/update/urn:li:activity:6950793391425134592/
